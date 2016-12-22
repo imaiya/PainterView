@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.unco.painterview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.unco.statelibrary.StateButton
+        android:id="@+id/btn_reset"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="重置"
+        android:textColor="#fff"
+        app:bgRadius="10dp"
+        app:normalBackgroundColor="@color/colorPrimaryDark"
+        app:pressedBackgroundColor="@color/colorPrimary"/>
+
+    <com.unco.statelibrary.StateButton
+        android:id="@+id/btn_bitmap"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="生成bitmap"
+        android:textColor="#fff"
+        app:bgRadius="10dp"
+        app:normalBackgroundColor="@color/colorPrimaryDark"
+        app:pressedBackgroundColor="@color/colorPrimary"/>
+
+    <com.unco.library.PainterView
+        android:id="@+id/painter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6c"/>
+</LinearLayout>
